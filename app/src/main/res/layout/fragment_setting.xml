@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingFragment">
+
+
+
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:text="User Information"
+        android:textSize="@dimen/_25ssp"
+        style="@style/textColor"
+        android:layout_marginLeft="@dimen/_10sdp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/userInfo"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/roundedtext"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/roundedtext"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <Button
+       android:id="@+id/updateButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:text="Update"
+       android:textSize="@dimen/_18ssp"
+       android:background="@drawable/roundedtext"
+       />
+
+
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Theme"
+        android:textSize="@dimen/_25ssp"
+        style="@style/textColor"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swipe"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:radius="25dp" />
+    <stroke android:width="0.9dp"
+        android:color="@color/white" />
+    <!--  stroke for defining a border for view -->
+
+
+    <gradient
+        android:startColor="@color/buttonStart"
+        android:endColor="@color/buttonEnd"
+
+        />
+
+    <size
+        android:height="30dp"
+        android:width="90dp" />
+
+</shape>

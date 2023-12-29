@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/activityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Squat"
+        android:textSize="@dimen/_25ssp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        style="@style/textColor"
+
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/activityImage"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_170sdp"
+        app:layout_constraintTop_toBottomOf="@+id/activityName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/butbridge"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activityImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Stands straight with arms Stands straight with arms Stands straight with arms
+  Stands straight with arms Stands straight with arms Stands straight with arms Stands straight with arms"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        style="@style/DescribeText"
+
+        />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/describe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="0:15 milli second"
+        android:textSize="@dimen/_15ssp"
+        style="@style/timeColor"
+        android:layout_marginLeft="@dimen/_15sdp"
+        />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Start"
+        android:textSize="@dimen/_20ssp"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddFragment">
+
+
+
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Activity "
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        style="@style/textColor"
+
+        />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/addText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Add activity name"
+        android:textColorHint="@color/black"
+        android:background="@drawable/roundedtext"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/addTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/addName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Add activity time"
+        android:textColorHint="@color/black"
+        android:background="@drawable/roundedtext"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+
+        />
+
+    <EditText
+        android:id="@+id/addDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/addTime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Add activity describe"
+        android:textColorHint="@color/black"
+        android:background="@drawable/roundedtext"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/addMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/addDescribe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Add Main activity "
+        android:textColorHint="@color/black"
+        android:background="@drawable/roundedtext"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+
+
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/addMain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:text="Add"
+        android:textSize="@dimen/_25ssp"
+        android:background="@drawable/roundedback"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

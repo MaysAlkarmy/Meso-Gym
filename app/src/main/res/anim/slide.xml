@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    &lt;!&ndash; الانتقال من اليمين إلى اليسار &ndash;&gt;-->
+<!--    <translate-->
+<!--        android:fromXDelta="100%p"-->
+<!--        android:toXDelta="0%p"-->
+<!--        android:duration="1000"-->
+<!--        android:interpolator="@android:anim/decelerate_interpolator" />-->
+
+    <!-- الانتقال من اليسار إلى الوسط -->
+    <translate
+        android:fromXDelta="-100%p"
+        android:toXDelta="0%p"
+        android:duration="1000"
+        android:startOffset="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+
+    <!-- توقف العنصر في المنتصف -->
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="0%p"
+        android:duration="500"
+        android:startOffset="2000" />
+
+    <!-- تلاشي العنصر -->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="500"
+        android:startOffset="2500" />
+</set>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.historyFragment">
+
+
+
+    <TextView
+        android:id="@+id/activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="User Activities"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:textSize="@dimen/_25ssp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        style="@style/textColor"
+        />
+
+    <TextView
+        android:id="@+id/act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activities"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="SQUATS"
+        android:textSize="@dimen/_20ssp"
+        style="@style/DescribeText"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/act2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="BUTT BRIDGE"
+        android:textSize="@dimen/_20ssp"
+        style="@style/DescribeText"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/act3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/act2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="PUSH UP"
+        android:textSize="@dimen/_20ssp"
+        style="@style/DescribeText"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

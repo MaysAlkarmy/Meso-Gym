@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SportApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ButtonColor</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonColor"> <item name="android:backgroundTint">@color/ButtonColor</item>   </style>
+    <style name="textColor"> <item name="android:textColor"> @color/TextColor</item>   </style>
+    <style name="DescribeText"> <item name="android:textColor"> @color/describeText</item>   </style>
+    <style name="timeColor"> <item name="android:textColor"> @color/timeColor</item>   </style>
+
+</resources>
